@@ -28,8 +28,13 @@
             </nav>
             <div class="contacts-links">
                 <ul class="nav-links list">
-                    <li><a href="mailto:info@devstudio.com" class="e-mail-address link">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="phone-number link">+38 096 111 11 11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="e-mail-address link"><svg class="icon-envelope" width="16" height="12">
+                        <use href="./images./icons/symbol-defs.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="phone-number link">
+                    <svg class="icon-smartphone"width="10" height="16">
+                        <use href="./images./icons/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a></li>
                 </ul>
             </div>
         </div>
@@ -45,17 +50,12 @@
             </div>
         </section>
 
-        <div class="container main-content">
-            <!--advantages -->
-            <section class="advantages ">
-
+        <!--advantages -->
+        <section class="advantages">
+            <div class="container">
                 <ul class="advantages-list list">
                     <li class="advantages-item">
-                        <div class="advantages-icon">
-                            <svg class="features-icon" width="70" height="70">
-                              <use href="images/icons/satelite.svg"></use>
-                            </svg>
-                          </div>
+                        <img src="/images/Rectangle 3 (3).jpg" width="270px" class="visually-hidden" alt="antena">
                         <h3 class="advantages-item-header">Внимание к деталям</h3>
                         <p class="advantages-item-text">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
@@ -83,46 +83,57 @@
                     </li>
 
                 </ul>
-            </section>
-            <!--our job-->
-            <section class="our-job ">
+            </div>
+        </section>
+            
+        <!--our job-->
+        <section class="our-job ">
+            <div class="container">
                 <h2 class="our-job-header">Чем мы занимаемся</h2>
                 <ul class="our-job-imges list">
                     <li class="our-job-img"><img src="images/1wwd.jpg" alt="computer"></li>
                     <li class="our-job-img"><img src="images/imgwhatwedo2.jpg" alt="smartphone"></li>
                     <li class="our-job-img"><img src="images/3wwd.jpg" alt="laptop"></li>
                 </ul>
-            </section>
-        </div>
-        <!--our team-->
+            </div>
+        </section>
 
-        
-            <section class="our-team">
+        <!--our team-->        
+        <section class="our-team">
+            <div class="container">
                 <h2 class="our-team-title">Наша команда</h2>
-             <div class="container">
-                       <ul class="our-team-members list">
-                            <li class="our-team-member card-box"> <img width="270" src="images/imgteam1.jpg" alt="Игорь Демьяненко">
-                                <h3 class="our-team-member-title">Игорь Демьяненко</h3>
-                                <p class="our-team-member-text">Product Designer</p>
-                            </li>
-                            <li class="our-team-member card-box">
-                                <img width="270" src="images/imgteam2.jpg" alt="Ольга Репина">
-                                <h3 class="our-team-member-title">Ольга Репина</h3>
-                                <p class="our-team-member-text">Frontend Developer</p>
-                            </li>
-                            <li class="our-team-member card-box">
-                                <img width="270" src="images/imgteam3.jpg" alt="Николай Тарасов">
-                                <h3 class="our-team-member-title">Николай Тарасов</h3>
-                                <p class="our-team-member-text">Marketing</p>
-                            </li>
-                            <li class="our-team-member card-box">
-                                <img width="270" src="images/imgteam4.jpg" alt="Михаил Ермаков">
-                                <h3 class="our-team-member-title">Михаил Ермаков</h3>
-                                <p class="our-team-member-text">UI Designer</p>
-                            </li>
-                        </ul>
-                </div>
-            </section>
+                <ul class="our-team-members list">
+                    <li class="our-team-member card-box">
+                        <img width="270" src="images/imgteam1.jpg" alt="Игорь Демьяненко">
+                        <div class="details">
+                            <h3 class="our-team-member-title">Игорь Демьяненко</h3>
+                            <p class="our-team-member-text">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="our-team-member card-box">
+                        <img width="270" src="images/imgteam2.jpg" alt="Ольга Репина">
+                        <div class="details">
+                            <h3 class="our-team-member-title">Ольга Репина</h3>
+                            <p class="our-team-member-text">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="our-team-member card-box">
+                        <img width="270" src="images/imgteam3.jpg" alt="Николай Тарасов">
+                        <div class="details">
+                            <h3 class="our-team-member-title">Николай Тарасов</h3>
+                            <p class="our-team-member-text">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="our-team-member card-box">
+                        <img width="270" src="images/imgteam4.jpg" alt="Михаил Ермаков">
+                        <div class="details">
+                            <h3 class="our-team-member-title">Михаил Ермаков</h3>
+                            <p class="our-team-member-text">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
       
         <section class="visually-hidden">
             <h3 class="client-title">Постоянные клиенты</h3>
