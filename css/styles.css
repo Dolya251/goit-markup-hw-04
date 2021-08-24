@@ -105,7 +105,6 @@ img {
   flex-direction: row;
   margin: 0 auto;
   padding: 0 15px;
-  margin-bottom: 94px;
 }
 
 .container.main-content {
@@ -329,9 +328,17 @@ img {
   height: 44px;
   border-radius: 50%;
 }
+.social-icons-item :hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.footer-social-icons-svg:hover {
+  color: var(--primary-wite-color);
+}
 /*our clients*/
 .our-clients {
   display: flex;
+  padding: 94px 0;
 }
 .client-title {
   font-weight: bold;
