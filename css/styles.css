@@ -11,6 +11,8 @@
   --border-accent-color: #eeeeee;
   --border-header-color: #ececec;
   --border-logo-color: #afb1b8;
+  --links-backgraund-color: #44454e;
+  --svg-color: #afb1b8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -333,11 +335,9 @@ img {
 }
 .footer-social-icons-link {
   border-radius: 50%;
-  background-color: #44454e;
+  background-color: var (--links-backgraund-color);
 }
-.social-icons-link {
-  background-color: var(--alt-text-cl);
-}
+
 .footer-social-icons-link:hover {
   background-color: var(--accent-color);
 }
@@ -352,8 +352,8 @@ img {
 }
 
 .social-icons-svg {
-  --color5: #afb1b8;
-  --color1: #afb1b8;
+  --color5: var(--svg-color);
+  --color1: var(--svg-color);
 }
 
 .social-icons-link:hover .social-icons-svg {
@@ -525,7 +525,8 @@ footer address {
 }
 
 .project .card-box:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
