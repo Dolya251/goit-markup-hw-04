@@ -122,7 +122,8 @@ img {
 }
 
 .nav-links li a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 }
 
@@ -310,15 +311,17 @@ img {
   letter-spacing: 0.03em;
   color: var(--p-text-color);
   text-align: center;
+  margin-bottom: 16px;
 }
 .social-icons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  margin-right: -10px;
 }
-.social-icons-item:not(:last-child) {
+.social-icons-item {
   margin-right: 10px;
 }
+
 .social-icons-link,
 .footer-social-icons-link {
   display: flex;
@@ -328,13 +331,36 @@ img {
   height: 44px;
   border-radius: 50%;
 }
-.social-icons-item :hover {
+.footer-social-icons-link {
+  border-radius: 50%;
+  background-color: #44454e;
+}
+.social-icons-link {
+  background-color: var(--alt-text-cl);
+}
+.footer-social-icons-link:hover {
   background-color: var(--accent-color);
+}
+.footer-social-icons-svg {
+  --color5: var(--primary-wite-color);
+  --color1: var(--primary-wite-color);
+}
+
+.social-icons-link:hover {
   cursor: pointer;
+  background-color: var(--accent-color);
 }
-.footer-social-icons-svg:hover {
-  color: var(--primary-wite-color);
+
+.social-icons-svg {
+  --color5: #afb1b8;
+  --color1: #afb1b8;
 }
+
+.social-icons-link:hover .social-icons-svg {
+  --color5: var(--primary-wite-color);
+  --color1: var(--primary-wite-color);
+}
+
 /*our clients*/
 .our-clients {
   display: flex;
@@ -355,7 +381,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border-logo-color);
+  color: var(--border-logo-color);
+  border: 1px solid currentColor;
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -380,6 +407,10 @@ footer {
 .footer-content {
   display: flex;
   align-items: baseline;
+}
+
+.footer-main-content {
+  margin-right: 70px;
 }
 
 footer .logo {
@@ -490,6 +521,11 @@ footer address {
 .project .card-box {
   box-shadow: none;
   border-radius: 0;
+  cursor: pointer;
+}
+
+.project .card-box:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
@@ -526,4 +562,29 @@ footer address {
 
 section .container {
   flex-direction: column;
+}
+
+/* Client */
+.client-cards {
+  margin-right: -30px;
+}
+
+.client-card {
+  margin-right: 30px;
+}
+
+.client-card .logo-client:hover {
+  color: var(--accent-bt-color);
+}
+
+.client-card .icon-Logo {
+  --color1: currentColor;
+  --color4: currentColor;
+}
+
+/* Top Icons */
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+  --color2: currentColor;
 }
