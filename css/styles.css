@@ -524,14 +524,20 @@ footer address {
   margin: 30px 0 0 30px;
 }
 
-.project .card-box {
+.portfolio-card-box {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--primary-wite-color);
+  box-sizing: border-box;
   box-shadow: none;
   border-radius: 0;
   cursor: pointer;
+  border-radius: 0px 0px 4px 4px;
 }
 
-.project .card-box:hover,
-.project .card-box:focus {
+.portfolio-card-box:hover,
+.portfolio-card-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
