@@ -11,7 +11,7 @@
   --border-accent-color: #eeeeee;
   --border-header-color: #ececec;
   --border-logo-color: #afb1b8;
-  --links-backgraund-color: #44454e;
+  --links-background-color: #44454e;
   --svg-color: #afb1b8;
 }
 body {
@@ -120,7 +120,7 @@ img {
 }
 
 .nav-links li {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .nav-links li a {
@@ -335,10 +335,11 @@ img {
 }
 .footer-social-icons-link {
   border-radius: 50%;
-  background-color: var (--links-backgraund-color);
+  background-color: var(--links-background-color);
 }
 
-.footer-social-icons-link:hover {
+.footer-social-icons-link:hover,
+.footer-social-icons-link:focus {
   background-color: var(--accent-color);
 }
 .footer-social-icons-svg {
@@ -346,7 +347,8 @@ img {
   --color1: var(--primary-wite-color);
 }
 
-.social-icons-link:hover {
+.social-icons-link:hover,
+.social-icons-link:focus {
   cursor: pointer;
   background-color: var(--accent-color);
 }
@@ -356,7 +358,8 @@ img {
   --color1: var(--svg-color);
 }
 
-.social-icons-link:hover .social-icons-svg {
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
   --color5: var(--primary-wite-color);
   --color1: var(--primary-wite-color);
 }
@@ -406,7 +409,6 @@ footer {
 }
 .footer-content {
   display: flex;
-  align-items: baseline;
 }
 
 .footer-main-content {
@@ -524,7 +526,8 @@ footer address {
   cursor: pointer;
 }
 
-.project .card-box:hover {
+.project .card-box:hover,
+.project .card-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -574,7 +577,8 @@ section .container {
   margin-right: 30px;
 }
 
-.client-card .logo-client:hover {
+.client-card .logo-client:hover,
+.client-card .logo-client:focus {
   color: var(--accent-bt-color);
 }
 
