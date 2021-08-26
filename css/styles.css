@@ -113,22 +113,27 @@ img {
   flex-direction: column;
 }
 
-.nav-links {
+.nav-links,
+.menu-nav-links {
   display: flex;
   flex-direction: row;
   line-height: 16px;
 }
-
+.menu-nav-links li {
+  margin-left: 50px;
+}
 .nav-links li {
   margin-left: 30px;
 }
 
+.menu-nav-links li,
 .nav-links li a {
   display: flex;
   align-items: center;
   padding: 32px 0;
 }
 
+.menu-nav-links li:first-child,
 .nav-links li:first-child {
   margin: 0;
 }
@@ -420,10 +425,6 @@ footer .logo {
   padding: 0;
 }
 
-footer .container {
-  flex-direction: column;
-}
-
 footer address {
   margin-top: 20px;
 }
@@ -470,12 +471,15 @@ footer address {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-left: -8px;
 }
 
 .filters li {
   margin-left: 8px;
+}
+.filters li:first-child {
+  margin-left: 0px;
 }
 
 .filter {
@@ -572,9 +576,11 @@ section .container {
 .client-cards {
   margin-right: -30px;
 }
-
 .client-card {
   margin-right: 30px;
+}
+.clients-cards li:last-child {
+  margin-right: 0px;
 }
 
 .client-card .logo-client:hover,
