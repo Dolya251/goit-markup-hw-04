@@ -99,12 +99,11 @@ ul {
 .contacts-link {
   color: var(--primary-text-color);
   text-decoration: none;
-  padding: 32px 0px;
 }
 
-.navigation-link:hover,
+.link:hover,
 .contacts-link:hover,
-.navigation-link:focus,
+.link:focus,
 .contacts-link:focus {
   color: var(--accent-color);
   cursor: pointer;
@@ -119,7 +118,6 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   display: block;
-  min-width: 150px;
 }
 .logo-position {
   padding: 24px 0;
@@ -133,6 +131,8 @@ ul {
 }
 .contacts-link {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
 }
 
 /*hero*/
@@ -196,16 +196,7 @@ ul {
 }
 
 /*advantages */
-.advantages-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  background-color: var(--main-bt-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -230,6 +221,7 @@ ul {
   background-color: var(--main-bt-color);
   border-radius: 4px;
   margin-bottom: 30px;
+  fill: currentColor;
 }
 .advantages-list {
   display: flex;
@@ -310,13 +302,14 @@ ul {
   margin-right: 0;
 }
 .item-description {
-  padding: 30px;
+  padding: 30px 0px;
 }
 .social-icons {
   display: flex;
-  margin-right: -10px;
+  justify-content: center;
+  margin-top: 16px;
 }
-.social-icons-item {
+.social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -339,8 +332,7 @@ ul {
   background-color: var(--accent-color);
 }
 .footer-social-icons-svg {
-  --color5: var(--primary-wite-color);
-  --color1: var(--primary-wite-color);
+  fill: var(--primary-wite-color);
 }
 
 .social-icons-link:hover,
@@ -350,20 +342,17 @@ ul {
 }
 
 .social-icons-svg {
-  --color5: var(--svg-color);
-  --color1: var(--svg-color);
+  fill: var(--svg-color);
 }
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  --color5: var(--primary-wite-color);
-  --color1: var(--primary-wite-color);
+  fill: var(--primary-wite-color);
 }
 
 /*our clients*/
-.our-clients {
+.client {
   display: flex;
-  padding: 94px 0;
 }
 .client-title {
   font-weight: bold;
@@ -373,10 +362,8 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.clients-cards {
-  display: flex;
-}
-.logo-client {
+
+.client-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -386,6 +373,21 @@ ul {
   height: 92px;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-item:hover,
+.client-link:hover,
+.client-item:focus,
+.client-link:focus {
+  color: var(--accent-bt-color);
+}
+
+.client-item .client-link {
+  fill: currentColor;
 }
 
 /*footer*/
@@ -499,41 +501,16 @@ footer .logo {
 .portfolio-link:focus {
   background: var(--primary-wite-color);
   display: block;
-}
-.portfolio-link {
-  text-decoration: none;
-}
-
-.project:hover,
-.project:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-/* Client */
-.client-cards {
-  margin-right: -30px;
-}
-.client-card {
-  margin-right: 30px;
-}
-.clients-cards li:last-child {
-  margin-right: 0px;
-}
-
-.client-card .logo-client:hover,
-.client-card .logo-client:focus {
-  color: var(--accent-bt-color);
-}
-
-.client-card .icon-Logo {
-  --color1: currentColor;
-  --color4: currentColor;
+.portfolio-link {
+  text-decoration: none;
 }
 
 /* Top Icons */
 .icon-envelope,
 .icon-smartphone {
   margin-right: 10px;
-  --color2: currentColor;
+  fill: currentColor;
 }
